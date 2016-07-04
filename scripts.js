@@ -9,7 +9,7 @@ function multiply (Num) {
 }
 
 function subtract (Num) {
-  num = Num - 4;
+  Num = Num - 4;
   return Num;
 }
 

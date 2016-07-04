@@ -14,3 +14,7 @@ function subtract (Num) {
 }
 
 console.log (add(multiply(subtract(8))));
+
+/* So I guess following PEMDAS, the
+console.log of 14 makes sense, though
+I originally expected it to be 26 */

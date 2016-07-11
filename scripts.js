@@ -1,20 +1,20 @@
-function add (Num) {
-  Num += 2;
-  return Num;
+function processNum (num) {
+
+  function add (x) {
+    return x += 2;    
+   }
+  function multiply (x) {
+    return x *= 3;
+  }
+  function subtract (x) {
+  return x -= 4;
+} 
+  console.log(add(multiply(subtract(num))));
 }
 
-function multiply (Num) {
-  Num *= 3;
-  return Num;
-}
-
-function subtract (Num) {
-  Num -= 4;
-  return Num;
-}
-
-console.log (add(multiply(subtract(8))));
+processNum(8);
 
 /* So I guess following PEMDAS, the
 console.log of 14 makes sense, though
 I originally expected it to be 26 */
+
